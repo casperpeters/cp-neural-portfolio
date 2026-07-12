@@ -395,10 +395,10 @@
   });
 
   function tickClock() {
-    clock.textContent = new Intl.DateTimeFormat('nl-NL', {
+    clock.textContent = new Intl.DateTimeFormat('en-GB', {
       timeZone: 'Europe/Amsterdam', hour: '2-digit', minute: '2-digit',
-      second: '2-digit', hour12: false
-    }).format(new Date()) + ' AMS';
+      second: '2-digit', hour12: false, timeZoneName: 'short'
+    }).format(new Date());
   }
 
   tickClock();

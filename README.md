@@ -1,16 +1,16 @@
 # Casper Peters — portfolio
 
-Publieke persoonlijke portfoliosite van Casper Peters: applied physicist, systems builder en ASML Competence Engineer uit Eindhoven.
+Personal portfolio of Casper Peters, an applied physicist and Competence Engineer based in Eindhoven.
 
 **Live:** <https://casperpeters.github.io/cp-neural-portfolio/>
 
-## Cases
+## Selected projects
 
-- Neurophysics — recurrent temporal Restricted Boltzmann Machines voor whole-brain zebravisdata.
-- Bridgetafel — interactief leerproduct voor bridgebeginners.
-- MigratieMonitor — live CBS-migratiedata als transparant dataproduct.
+- Neurophysics: recurrent temporal Restricted Boltzmann Machines for whole-brain zebrafish data.
+- Bridgetafel: an interactive learning app for bridge beginners.
+- MigratieMonitor: a static dashboard using current CBS migration data.
 
-## Lokaal draaien
+## Run locally
 
 ```bash
 python -m http.server 4173 --bind 127.0.0.1
@@ -18,9 +18,9 @@ python -m http.server 4173 --bind 127.0.0.1
 
 Open <http://127.0.0.1:4173>.
 
-## Interactie en toegankelijkheid
+## Interaction and accessibility
 
-- Cursorbeweging en klikken activeren het neural/silicon-signaal.
-- `Pause signal` stopt de animatie.
-- `prefers-reduced-motion`, toetsenbordfocus en een skiplink worden ondersteund.
-- Responsive getest op 320, 390, 768 en 1280 pixels.
+- Pointer movement and clicks activate the neural/silicon signal.
+- `Pause signal` stops the animation.
+- The site supports `prefers-reduced-motion`, keyboard focus and a skip link.
+- Responsive layouts are tested at 320, 390, 768 and 1280 pixels.
