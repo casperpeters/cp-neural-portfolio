@@ -341,6 +341,7 @@ h1 em::after {
   .case h3 { font-size: 36px; }
   .case-lede { margin: 24px 0 28px; font-size: 16px; }
   .case-visual { aspect-ratio: 1.35 / 1; }
+  .case-visual.play-visual { aspect-ratio: 2 / 1; }
   .case-visual img { object-position: center; }
   .case-visual:not(.paper-visual) img { object-fit: contain; }
   .paper-visual { aspect-ratio: 1.85 / 1; }
