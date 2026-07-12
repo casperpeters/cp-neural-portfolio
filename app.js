@@ -394,17 +394,6 @@
     if (!document.hidden && running) raf = requestAnimationFrame(render);
   });
 
-  document.querySelectorAll('[data-dialog-target]').forEach(trigger => {
-    const dialog = document.getElementById(trigger.dataset.dialogTarget);
-    if (!dialog) return;
-    const close = dialog.querySelector('.dialog-close');
-    trigger.addEventListener('click', () => dialog.showModal());
-    close?.addEventListener('click', () => dialog.close());
-    dialog.addEventListener('click', event => {
-      if (event.target === dialog) dialog.close();
-    });
-  });
-
   const compactDetails = [...document.querySelectorAll('.case-compact .project-details')];
   const mobileProjects = matchMedia('(max-width: 620px)');
   function syncProjectDetails() {
