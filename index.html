@@ -32,6 +32,7 @@
     <nav aria-label="Main navigation">
       <a href="#work">Projects</a>
       <a href="#approach">Approach</a>
+      <a href="cv/">CV</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="status"><span></span> Eindhoven, Netherlands</div>
@@ -53,14 +54,22 @@
         <p class="intro">I'm Casper Peters, an applied physicist and Competence Engineer at ASML in Eindhoven. I work on system diagnostics and build software projects around data, learning and technical decision-making.</p>
         <div class="hero-actions">
           <a class="button primary" href="#work">Selected projects <span>↘</span></a>
+          <a class="button ghost" href="cv/">View CV <span>→</span></a>
           <a class="button ghost" href="https://www.linkedin.com/in/casper-peters-a29796209" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
         </div>
       </div>
 
       <aside class="telemetry mono" aria-label="Profile summary">
-        <div><span>FIELD</span><b>SYSTEMS</b></div>
-        <div><span>NODES</span><b id="node-count">042</b></div>
-        <div><span>BASE</span><b>EINDHOVEN</b></div>
+        <div class="telemetry-row"><span>FIELD</span><b>SYSTEMS</b></div>
+        <label class="telemetry-control" for="node-slider">
+          <span class="telemetry-control-head"><span>NODES</span><output id="node-count" for="node-slider">040</output></span>
+          <input id="node-slider" type="range" min="20" max="72" value="40" step="1" aria-label="Number of nodes" />
+        </label>
+        <label class="telemetry-control intensity-control" for="intensity-slider">
+          <span class="telemetry-control-head"><span>LIGHT</span><output id="intensity-value" for="intensity-slider">045%</output></span>
+          <input id="intensity-slider" type="range" min="10" max="85" value="45" step="1" aria-label="Signal light intensity" />
+        </label>
+        <div class="telemetry-row"><span>BASE</span><b>EINDHOVEN</b></div>
       </aside>
 
       <button class="motion-toggle mono" id="motion-toggle" type="button" aria-pressed="false">
@@ -95,7 +104,7 @@
 
       <article class="case case-featured" id="neurophysics">
         <div class="case-visual paper-visual">
-          <a class="paper-header-link" href="https://elifesciences.org/reviewed-preprints/98489" target="_blank" rel="noreferrer" aria-label="Read the official eLife paper">
+          <a class="paper-header-link" href="https://elifesciences.org/articles/98489" target="_blank" rel="noreferrer" aria-label="Read the official eLife paper">
             <img src="assets/projects/neurophysics-paper-header.png" alt="Official eLife paper header with the article title, author list including Casper Peters, affiliation and DOI" width="1716" height="654">
           </a>
         </div>
@@ -200,6 +209,7 @@
         <span class="contact-arrow">↗</span>
       </a>
       <div class="contact-footer mono">
+        <a href="cv/">CV →</a>
         <a href="https://www.linkedin.com/in/casper-peters-a29796209" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
         <a href="https://github.com/casperpeters" target="_blank" rel="noreferrer">GITHUB ↗</a>
         <span>© 2026 CASPER PETERS</span>
